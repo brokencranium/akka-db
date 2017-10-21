@@ -1,6 +1,6 @@
 bin
 libexec
-project
+project/target
 target
 .idea
 *.iml
