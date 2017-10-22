@@ -20,18 +20,18 @@ public class PingPongActorTest {
 
     static ActorSystem system;
 
-//    @BeforeClass
+    @BeforeClass
     public static void setup() {
         system = ActorSystem.create();
     }
 
-//    @AfterClass
+    @AfterClass
     public static void tearDown() {
         JavaTestKit.shutdownActorSystem(system);
         system = null;
     }
 
-//    @Test
+    @Test
     public void testPingActor() {
         new JavaTestKit(system) {{
             final ActorRef pingActor = system.actorOf(PingActor.props());
@@ -52,7 +52,7 @@ public class PingPongActorTest {
         }};
     }
 
-//    @Test
+    @Test
     public void testPongActor() {
         new JavaTestKit(system) {{
             final ActorRef pongActor = system.actorOf(PongActor.props());

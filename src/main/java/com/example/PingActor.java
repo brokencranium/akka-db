@@ -3,7 +3,6 @@ package com.example;
 import akka.actor.UntypedActor;
 import akka.actor.Props;
 import akka.actor.ActorRef;
-import akka.japi.Creator;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 
