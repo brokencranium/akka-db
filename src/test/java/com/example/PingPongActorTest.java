@@ -1,20 +1,14 @@
 package com.example;
 
 import org.junit.AfterClass;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
-import akka.actor.Props;
 import akka.testkit.JavaTestKit;
-import scala.concurrent.duration.Duration;
 
-import com.example.PingActor;
-import com.example.PongActor;
+import static org.junit.Assert.assertEquals;
 
 public class PingPongActorTest {
 
